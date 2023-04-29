@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+    <script>
+        console.log("Let's begin the Game");
+        let playerSelection= prompt("Type Rock or Paper or Scissor");
+        let computerSelection;
+        let random= Math.random()*100;
+        if(random<=33){
+            computerSelection="Rock";
+        }else if(random<=66){
+            computerSelection="Paper";
+        }else{
+            computerSelection="Scissor";
+        }
+
+        playerSelection= playerSelection.toUpperCase();
+        computerSelection= computerSelection.toUpperCase();
+        if(playerSelection === computerSelection){
+            console.log("Match Draw");
+        }else if(playerSelection==="ROCK"&&computerSelection==="SCISSOR"){
+            console.log("You Won");
+        }else if(playerSelection==="PAPER"&&computerSelection==="ROCK"){
+            console.log("You Won");
+        }else if(playerSelection==="SCISSOR"&&computerSelection==="PAPER"){
+            console.log("You Won");
+        }else {
+            console.log("You Lose");
+        }
+    </script>
+</body>
+</html>
