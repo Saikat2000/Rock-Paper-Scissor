@@ -9,15 +9,37 @@
 </head>
 
 <body>
-    <script>
+    <p>
+        <div>Player</div>
+        <button>Rock</button>
+        <button>Paper</button>
+        <button>Scissor</button>
+
+        <div>VS</div>
+
+        <div>Computer</div>
+        <button>Rock</button>
+        <button>Paper</button>
+        <button>Scissor</button>
+    </p>
+    <p>
+        <div>Score</div>
+        <div></div>
+        <div></div>
+    </p>
+    <p>
+        <div>Winner</div>
+        <div></div>
+    </p>
+    <!-- <script>
         console.log("Let's begin the Game");
-        
+
         let playerSelection;
         let computerSelection;
 
-        let playerScore=0;
-        let computerScore=0;
-        
+        let playerScore = 0;
+        let computerScore = 0;
+
 
         function playRound() {
             playerSelection = prompt("Type Rock or Paper or Scissor");
@@ -36,28 +58,33 @@
             if (playerSelection === computerSelection) {
                 console.log("Draw");
                 console.log(`Player Score ${playerScore} vs Computer Score ${computerScore}`);
-            } else if (playerSelection === "ROCK" && computerSelection === "SCISSOR") {
+            }
+            else if (playerSelection === "ROCK" && computerSelection === "SCISSOR") {
                 console.log("You Won");
                 playerScore = playerScore + 1;
                 console.log(`Player Score ${playerScore} vs Computer Score ${computerScore}`);
-            } else if (playerSelection === "PAPER" && computerSelection === "ROCK") {
+            }
+            else if (playerSelection === "PAPER" && computerSelection === "ROCK") {
                 console.log("You Won");
                 playerScore = playerScore + 1;
                 console.log(`Player Score ${playerScore} vs Computer Score ${computerScore}`);
-            } else if (playerSelection === "SCISSOR" && computerSelection === "PAPER") {
+            }
+            else if (playerSelection === "SCISSOR" && computerSelection === "PAPER") {
                 console.log("You Won");
                 playerScore = playerScore + 1;
                 console.log(`Player Score ${playerScore} vs Computer Score ${computerScore}`);
-            } else {
+            }
+            else {
                 console.log("You Lose");
                 computerScore = computerScore + 1;
                 console.log(`Player Score ${playerScore} vs Computer Score ${computerScore}`);
             }
         }
-        for(let i=1; i<=5; i++){
+
+        for (let i = 1; i <= 5; i++) {
             playRound();
         }
-        
+
         if (playerScore > computerScore) {
             console.log("You Won the game!");
         } else if (playerScore < computerScore) {
@@ -66,7 +93,7 @@
             console.log("Match draw!")
         }
 
-    </script>
+    </script> -->
 </body>
 
 </html>
