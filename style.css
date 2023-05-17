@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+#para1{
+    display: flex;
+    
+}
+.gameCard{
+    display: flex;
+    flex-direction: column;
+    flex:1 0 auto;
+    align-items:center;
+    
+}
+.player{
+    font-size:35px;
+}
+button{
+    height: 50px;
+    width: 130px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #F99B7D;
+}
+.score1{
+    display: flex;
+
+}
+.score2{
+    flex:1 0 auto;
+    justify-content:end;
+}

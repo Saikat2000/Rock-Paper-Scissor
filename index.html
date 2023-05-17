@@ -6,31 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <p>
-        <div>Player</div>
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissor</button>
+    <div id="para1">
+        <div class="gameCard">
+            <p class="player">Player</p>
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissor</button>
+        </div>
+        
+        <p style="font-size: 35px;">VS</p>
 
-        <div>VS</div>
-
-        <div>Computer</div>
-        <button>Rock</button>
-        <button>Paper</button>
-        <button>Scissor</button>
-    </p>
-    <p>
-        <div>Score</div>
+        <div class="gameCard">
+            <p class="player">Computer</p>
+            <button>Rock</button>
+            <button>Paper</button>
+            <button>Scissor</button>
+        </div>
+        
+    </div>
+    <div class="score1">
+        <div class="score2">
+            <div>Score Of Player</div>
+            <p id="playerScore"></p>
+        </div>
+        <div class="score2">
+            <div>Score Of Computer</div>
+            <p id="computerScore"></p>
+        </div>
+        
+    </div>
+    <div>
+        <p>Winner</p>
         <div></div>
-        <div></div>
-    </p>
-    <p>
-        <div>Winner</div>
-        <div></div>
-    </p>
+    </div>
     <!-- <script>
         console.log("Let's begin the Game");
 
